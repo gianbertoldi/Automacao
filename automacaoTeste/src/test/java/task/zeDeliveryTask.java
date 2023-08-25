@@ -41,8 +41,7 @@ public class zeDeliveryTask {
 		categoraPage.addSeisUnidades();
 		categoraPage.addCarrinho();
 		String valor = categoraPage.guardarValorDoProduto();
-		String frete = categoraPage.guardarFrete();
-		
+		String frete = categoraPage.guardarFrete();	
 		double calcularTotal = converterValores.convert(valor.replaceAll("[^0-9,]", "")) + converterValores.convert(frete.replaceAll("[^0-9,]", ""));
 		String stringTotal = Double.toString(calcularTotal);
 		stringTotal = stringTotal.replace('.', ',');

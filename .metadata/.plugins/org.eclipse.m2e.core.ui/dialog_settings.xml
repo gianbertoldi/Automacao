@@ -43,12 +43,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="AutomacaoTeste"/>
 			<item value="TesteAutomatizados"/>
 			<item value="TesteAutomacao"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="automacaoTeste"/>
 			<item value="testeAutomatizados"/>
 			<item value="testeAutomacao"/>
 		</list>
