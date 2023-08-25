@@ -1,0 +1,31 @@
+package testeCase;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+import utils.GerenciamentoDriver;
+
+public class ZeDelivary {
+	
+	private WebDriver driver;
+	GerenciamentoDriver gerenciamentoDriver;
+	
+	
+	@Before
+	public void setup() {
+		gerenciamentoDriver = new GerenciamentoDriver();
+		driver = GerenciamentoDriver.browser("edge");
+	}
+
+	@Test
+	public void zeDelivary() {
+		driver.get("https://www.ze.delivery/");
+	}
+	
+	@After
+	public void fim() {
+		driver.quit();
+	}
+}

@@ -1,0 +1,49 @@
+package task;
+
+import static org.junit.Assert.assertEquals;
+
+import org.openqa.selenium.WebDriver;
+
+import page.CategoriaPage;
+import page.EnderecoPage;
+import utils.ConversorDeValores;
+import utils.GerenciamentoDriver;
+import utils.TipoBrahma;
+
+public class zeDeliveryTask {
+
+	GerenciamentoDriver gerenciamentoDriver;
+	EnderecoPage enderecoPage;
+	CategoriaPage categoraPage;
+	TipoBrahma tipoBrahma;
+	ConversorDeValores coverterValores;
+	
+	public zeDeliveryTask(WebDriver driver) {
+		enderecoPage = new EnderecoPage(driver);
+		categoraPage = new CategoriaPage(driver);
+	}
+	
+	public void validationEnderecoZeDelivary() {	
+		enderecoPage.souMaiorDeIdade();
+		enderecoPage.selectInputEndereco();
+		enderecoPage.preecherRua();
+		enderecoPage.primeiraOpcao();
+		enderecoPage.numeroEndereco();
+		enderecoPage.semComplemento();
+		enderecoPage.selectVerProdutos();
+	}
+	
+	public void validaCategoriaCerveja() {
+		String valor = null;
+
+		categoraPage.selectCategoriaCerveja();
+		categoraPage.selecionarMarcaBrahma();
+		categoraPage.selecionarTipoBrahma(TipoBrahma.Chopp1Lt.getMilliliters());
+		categoraPage.addSeisUnidades();
+		categoraPage.guardarValorDoProduto(valor);
+		categoraPage.addCarrinho();
+		String total = categoraPage.valorTotal(valor);
+		categoraPage.valorTotal(total);
+		assertEquals("120,49", total);
+	}
+}

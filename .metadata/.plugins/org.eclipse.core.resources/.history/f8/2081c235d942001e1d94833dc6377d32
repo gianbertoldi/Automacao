@@ -1,0 +1,39 @@
+package task;
+
+import org.openqa.selenium.WebDriver;
+
+import page.CategoriaPage;
+import page.EnderecoPage;
+import utils.GerenciamentoDriver;
+import utils.TipoBrahma;
+
+public class zeDeliveryTask {
+
+	private WebDriver driver;
+	GerenciamentoDriver gerenciamentoDriver;
+	EnderecoPage enderecoPage;
+	CategoriaPage categoraPage;
+	TipoBrahma tipoBrahma;
+	
+	public zeDeliveryTask(WebDriver driver) {
+		this.driver = driver;
+		enderecoPage = new EnderecoPage(driver);
+		categoraPage = new CategoriaPage(driver);
+	}
+	
+	public void validationEnderecoZeDelivary() {	
+		enderecoPage.souMaiorDeIdade();
+		enderecoPage.selectInputEndereco();
+		enderecoPage.preecherRua();
+		enderecoPage.primeiraOpcao();
+		enderecoPage.numeroEndereco();
+		enderecoPage.semComplemento();
+		enderecoPage.selectVerProdutos();
+	}
+	
+	public void validaCategoriaCerveja() {
+		categoraPage.selectCategoriaCerveja();
+		categoraPage.selecionarMarcaBrahma();
+		categoraPage.selecionarTipoBrahma(TipoBrahma.Chopp1Lt.getMilliliters());
+	}
+}

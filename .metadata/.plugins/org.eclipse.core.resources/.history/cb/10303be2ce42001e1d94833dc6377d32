@@ -1,0 +1,24 @@
+package page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import utils.AcoesSelenium;
+
+public class CategoriaPage extends AcoesSelenium{
+
+	private WebDriver driver;
+	
+	public CategoriaPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public void selectCategoriaCerveja() {
+		By tabCerveja = By.id("category-Cervejas");
+		click(driver, tabCerveja, 10);
+	}
+	public void selecionarBrahma350Ml() {
+		By brahma350 = By.xpath("//h2[@id='product-title' and contains(text(), 'Brahma Duplo Malte 350ml')]");
+		click(driver, brahma350, 10);
+	}
+}

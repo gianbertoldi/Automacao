@@ -1,0 +1,15 @@
+package page;
+
+import org.openqa.selenium.WebDriver;
+
+import utils.AcoesSelenium;
+
+public class PrudutosPage extends AcoesSelenium{
+	
+	private WebDriver driver;
+	
+	public ProdutosPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+}
