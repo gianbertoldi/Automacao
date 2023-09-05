@@ -12,7 +12,6 @@ import utils.TipoBrahma;
 
 public class zeDeliveryTask {
 
-	GerenciamentoDriver gerenciamentoDriver;
 	EnderecoPage enderecoPage;
 	CategoriaPage categoraPage;
 	TipoBrahma tipoBrahma;

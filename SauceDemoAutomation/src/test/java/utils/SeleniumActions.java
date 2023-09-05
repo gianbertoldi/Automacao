@@ -43,4 +43,9 @@ public class SeleniumActions {
 	    text = element.getText();
 	    return text;
 	}
+
+	protected boolean estaPronto() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
