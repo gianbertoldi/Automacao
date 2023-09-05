@@ -19,11 +19,13 @@
     <fullyQualifiedTypeName name="java.util.concurrent.CyclicBarrier"/>
     <fullyQualifiedTypeName name="utils.AcoesSelenium"/>
     <fullyQualifiedTypeName name="page.CategoriaPage"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="dev.failsafe.internal.util.Assert"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="utils.ConversorDeValores"/>
+    <fullyQualifiedTypeName name="utils.BrowserDriverMananger"/>
+    <fullyQualifiedTypeName name="utils.SeleniumActions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 </qualifiedTypeNameHistroy>

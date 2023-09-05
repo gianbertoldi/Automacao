@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Gian Bertoldi\Documents\Projetos\Automacao\AutomacaoZe"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -13,6 +14,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -43,16 +45,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="AutomacaoTeste"/>
-			<item value="TesteAutomatizados"/>
-			<item value="TesteAutomacao"/>
+			<item value="sauceDemoAutomation"/>
 		</list>
 		<list key="name">
+			<item value="SauceDemoAutomation"/>
 		</list>
 		<list key="artifactId">
-			<item value="automacaoTeste"/>
-			<item value="testeAutomatizados"/>
-			<item value="testeAutomacao"/>
+			<item value="sauceDemoAutomation"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
