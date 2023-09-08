@@ -22,8 +22,9 @@ public class LoginPage extends SeleniumActions{
 		return true;
 	}
 	
-	protected WebElement tituloLogin() {
-		return actions.visibilidadeDoElemento(driver, By.xpath("div[@class='login_logo']"), 10);
+	public WebElement tituloLogin() {
+		actions.visibilidadeDoElemento(driver, By.xpath("div[@class='login_logo']"), 10);
+		return 
 	}
 
 }

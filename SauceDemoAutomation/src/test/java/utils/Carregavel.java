@@ -33,7 +33,7 @@ public abstract class Carregavel {
     public void aguardar(int timeout) {
         long momentoInicial = Calendar.getInstance().getTimeInMillis();
         System.out.print("Aguardando " + getClass().getSimpleName() + "...");
-        espera.aguardarCondicao(timeout)
+        actions.aguardarCondicao(timeout)
             .withMessage("Tempo esgotado aguardando " + getClass().getSimpleName())
             .ignoring(Exception.class)
             .until(driver -> {
@@ -42,7 +42,7 @@ public abstract class Carregavel {
             });
         double tempoDecorridoMillis = Calendar.getInstance().getTimeInMillis() - momentoInicial;
         double tempoDecorridoSegundos = tempoDecorridoMillis / 1000;
-        System.out.println("[" + Bmouaajm_Formatador.formatarNumerico(tempoDecorridoSegundos) + "s]");
+        System.out.println("[" + Formatador.formatarNumerico(tempoDecorridoSegundos) + "s]");
     }
     
     /**

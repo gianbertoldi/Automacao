@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumActions {
@@ -43,6 +44,12 @@ public class SeleniumActions {
 	    text = element.getText();
 	    return text;
 	}
+	
+	public FluentWait<WebDriver> aguardarCondicao(int timeout) {
+        return new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(timeout))
+                .ignoring(Exception.class);
+    }
 
 	protected boolean estaPronto() {
 		// TODO Auto-generated method stub

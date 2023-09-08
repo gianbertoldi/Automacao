@@ -13,4 +13,8 @@ public class Executor {
 		driver = BrowserDriverMananger.browser("edge");
 		driver.get("https://www.saucedemo.com/");
 	}
+	
+	public void exit() {
+		driver.quit();
+	}
 }

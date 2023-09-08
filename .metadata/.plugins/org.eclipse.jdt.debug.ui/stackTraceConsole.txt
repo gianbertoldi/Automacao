@@ -1,8 +1,5 @@
-org.junit.ComparisonFailure: expected:<R$ 121[.]49> but was:<R$ 121[,]49>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at task.zeDeliveryTask.validaCategoriaCerveja(zeDeliveryTask.java:50)
-	at testeCase.ZeDelivarytests.validaSelecaoCervejasEValorFinal(ZeDelivarytests.java:33)
+java.lang.NullPointerException: Cannot invoke "task.LoginTask.validarTelaLogin()" because "this.loginTask" is null
+	at test.LoginTests.validaTelaLogin(LoginTests.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -11,8 +8,6 @@ org.junit.ComparisonFailure: expected:<R$ 121[.]49> but was:<R$ 121[,]49>
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)

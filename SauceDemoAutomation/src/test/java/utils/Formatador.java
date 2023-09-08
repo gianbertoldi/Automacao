@@ -7,8 +7,7 @@ import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-
-import io.opentelemetry.api.internal.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class Formatador {
 
